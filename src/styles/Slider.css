@@ -1,0 +1,54 @@
+.sliderlabel {
+  color: blueviolet; /* Label color */
+  font-size: 1.2rem;
+}
+.whitelabel {
+  color: white;
+}
+.slider {
+  -webkit-appearance: none; /* Remove default appearance */
+  appearance: none;
+  flex: 1;
+  height: 8px;
+  background: white; /* Background color of the slider track */
+  border-radius: 5px;
+  outline: none;
+  opacity: 0.8;
+  transition: opacity 0.2s;
+}
+
+.slider:hover {
+  opacity: 1;
+}
+
+/* Custom handle (thumb) */
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none; /* Remove default appearance */
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: blueviolet; /* Handle color */
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.slider::-moz-range-thumb {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: blueviolet; /* Handle color */
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+/* Change handle color on hover */
+.slider::-webkit-slider-thumb:hover {
+  background: white;
+  border: 2px solid blueviolet;
+}
+
+.slider::-moz-range-thumb:hover {
+  background: white;
+  border: 2px solid blueviolet;
+}
